@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 2;
     background-color: #f4f4f4;
 }
 body {
@@ -18,35 +18,47 @@ body {
 
 
 .container {
-    background: #D3D3D3;
+    background: transparent; /* Make background transparent */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: none; /* Remove box-shadow */
     text-align: center;
+    transition: all 0.3s ease; /* Transition added */
 }
 
+
 input {
-    padding: 10px;
+    padding: 15px; /* Increase padding */
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px; /* Increase font size */
+    width: 80px; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    transition: all 0.3s ease; /* Add transition for smooth changes */
 }
 
 button {
     padding: 10px 20px;
     border: none;
     background-color: #28a745;
-    color: blue;
-    border-radius: 4px;
+    color: white; /* Change text color to white */
+    border-radius: 20px; /* Increase border-radius for more curved edges */
     cursor: pointer;
+    transition: all 0.3s ease; /* Add transition for smooth changes */
 }
+
 
 button:hover {
-    background-color: #218838;
+    background-color: blue;
 }
-
 #result {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #333;
+    color: white; /* Text color set to white */
+    background-color: gray; /* Background color of the result box */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    text-align: center; /* Center the text */
 }
